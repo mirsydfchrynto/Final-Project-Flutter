@@ -38,6 +38,8 @@ class _HomeState extends State<Home> {
             backgroundColor: Colors.white,
             type: BottomNavigationBarType.fixed,
             currentIndex: _currentIndex,
+            showSelectedLabels: false,
+            showUnselectedLabels: false,
             onTap: (index) {
               setState(() {
                 _currentIndex = index;

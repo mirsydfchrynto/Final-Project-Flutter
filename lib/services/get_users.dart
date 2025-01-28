@@ -1,23 +1,23 @@
 class GetUsers {
   final int id;
   final String email;
-  final String firstname;
-  final String lastname;
+  final String firstName;
+  final String lastName;
   final String avatar;
 
   GetUsers(
       {required this.id,
         required this.email,
-        required this.firstname,
-        required this.lastname,
+        required this.firstName,
+        required this.lastName,
         required this.avatar});
 
   factory GetUsers.fromJson(Map<String, dynamic> json) {
     return GetUsers(
         id: json['id'],
         email: json['email'],
-        firstname: json['first_name'],
-        lastname: json['last_name '],
+        firstName: json['first_name'],
+        lastName: json['last_name'],
         avatar: json['avatar']);
   }
 }
